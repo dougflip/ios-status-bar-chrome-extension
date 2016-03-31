@@ -7,3 +7,5 @@ bar.style.position = 'absolute';
 bar.style.top = '0';
 bar.style.zIndex = '100';
 document.body.appendChild(bar);
+document.body.classList.remove('platform-browser');
+document.body.classList.add('platform-cordova');
