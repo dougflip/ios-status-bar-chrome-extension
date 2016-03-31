@@ -13,9 +13,12 @@ const currentStatusBarMode = 'detect-platform-ios',
         document.body.appendChild(bar);
         document.body.classList.remove('platform-browser');
         document.body.classList.add('platform-cordova');
+    },
+    isPlatformIOS = () => {
+        return (document.body.classList && document.body.classList.contains('platform-ios'));
     };
 
-if ((currentStatusBarMode === 'detect-platform-ios') && (document.body.classList && document.body.classList.contains('platform-ios'))) {
+if ((currentStatusBarMode === 'detect-platform-ios') && isPlatformIOS()) {
     addStatusBar();
 } else if (currentStatusBarMode === 'force') {
     addStatusBar();
