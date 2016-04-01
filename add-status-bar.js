@@ -46,4 +46,4 @@ const addIOSStatusBar = () => {
         }
     };
 
-setIOSStatusBarModeAndReload(getIOSStatusBarMode() || 'disabled');
+setIOSStatusBarModeAndReload(getIOSStatusBarMode());
