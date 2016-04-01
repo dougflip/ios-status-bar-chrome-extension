@@ -5,6 +5,51 @@
     position: absolute;
     top: 0;
     z-index: 100;
+    padding: 1px 6px;
+    font-size: 16px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.ios-status-bar-overlay .ios-status-bar-overlay-left {
+    width: 30vw;
+    flex-grow: 1;
+    text-align: left;
+    order: 1;
+}
+
+.ios-status-bar-overlay .ios-status-bar-overlay-center {
+    width: 40vw;
+    flex-grow: 1;
+    text-align: center;
+    order: 2;
+}
+
+.ios-status-bar-overlay .ios-status-bar-overlay-right {
+    width: 30vw;
+    flex-grow: 1;
+    text-align: right;
+    order: 3;
+}
+
+.ios-status-bar-overlay .ios-status-bar-overlay-left .circle {
+    display: inline-block;
+    margin: 0 2px 0 0;
+    border: 1px solid #fff;
+    background-color: transparent;
+    height: 11px;
+    width: 11px;
+    border-radius: 100%;
+}
+
+.ios-status-bar-overlay .ios-status-bar-overlay-right .icon {
+    margin: 0 0 0 5px;
+}
+
+.ios-status-bar-overlay .ios-status-bar-overlay-left .circle.circle-filled {
+    background-color: #fff;
 }
 
 .ios-status-bar-popup-body {
