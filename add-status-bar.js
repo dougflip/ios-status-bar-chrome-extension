@@ -64,4 +64,8 @@ const formatIOSStatusBarTime = (date) => {
         }
     };
 
-setIOSStatusBarModeAndReload(getIOSStatusBarMode());
+
+let initializingIOSStatusBar = setTimeout(() => {
+    setIOSStatusBarModeAndReload(getIOSStatusBarMode());
+    clearTimeout(initializingIOSStatusBar);
+}, 2000);
