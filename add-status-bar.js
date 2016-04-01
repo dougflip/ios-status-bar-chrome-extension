@@ -1,6 +1,6 @@
 const addIOSStatusBar = () => {
         const iosStatusBar = document.createElement('div');
-        iosStatusBar.classList.add('ios-status-bar');
+        iosStatusBar.classList.add('ios-status-bar-overlay');
         iosStatusBar.style.backgroundColor = 'rgba(0, 0, 0, .5)';
         iosStatusBar.style.width = '100%';
         iosStatusBar.style.height = '20px';
