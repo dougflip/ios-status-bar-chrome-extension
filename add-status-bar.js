@@ -21,7 +21,7 @@ const addIOSStatusBar = () => {
             document.body.classList.add('platform-browser');
         }
 
-        let iosStatusBarElements = document.getElementsByClassName('ios-status-bar');
+        let iosStatusBarElements = document.getElementsByClassName('ios-status-bar-overlay);
         if(iosStatusBarElements.length > 0) {
             iosStatusBarElements[0].parentNode.removeChild(iosStatusBarElements[0]);
         }
