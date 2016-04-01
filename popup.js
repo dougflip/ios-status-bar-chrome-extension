@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const applyIOSStatusBarModeChange = (newMode) => {
         getCurrentTabInfo((tab) => {
             chrome.tabs.executeScript(tab.id, {
-                code: 'chrome.extension.sendRequest({content: document.body.innerHTML}, (response) => { setIOSStatusBarMode("' + newMode + '"); });'
+                code: 'chrome.extension.sendRequest({content: document.body.innerHTML}, (response) => { setIOSStatusBarModeAndReload("' + newMode + '"); });'
             }, () => {
                 console.log('iOSStatusBarOverlay updated: ' + newMode);
             });
