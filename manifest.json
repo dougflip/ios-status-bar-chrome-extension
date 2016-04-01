@@ -1,11 +1,19 @@
 {
     "manifest_version": 2,
-
     "name": "iOS Status Bar Overlay",
     "description": "This extension adds an iOS status bar overlay on the current page.",
     "version": "1.0",
     "content_scripts": [{
-        "matches": ["http://localhost:*/*"],
+        "matches": ["http://localhost:*/*", "http://local.*.*:*/*"],
         "js": ["add-status-bar.js"]
-    }]
+    }],
+    "permissions": [
+        "activeTab"
+    ],
+    "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html",
+        "default_title": "iOS Status Bar Overlay"
+    }
 }
