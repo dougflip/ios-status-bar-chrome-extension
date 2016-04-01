@@ -5,7 +5,8 @@
     "version": "1.0",
     "content_scripts": [{
         "matches": ["<all_urls>"],
-        "js": ["add-status-bar.js"]
+        "js": ["add-status-bar.js"],
+        "css": ["ios-status-bar.css"]
     }],
     "permissions": [
         "activeTab"

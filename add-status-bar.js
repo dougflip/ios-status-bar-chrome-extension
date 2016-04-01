@@ -1,12 +1,6 @@
 const addIOSStatusBar = () => {
         const iosStatusBar = document.createElement('div');
         iosStatusBar.classList.add('ios-status-bar-overlay');
-        iosStatusBar.style.backgroundColor = 'rgba(0, 0, 0, .5)';
-        iosStatusBar.style.width = '100%';
-        iosStatusBar.style.height = '20px';
-        iosStatusBar.style.position = 'absolute';
-        iosStatusBar.style.top = '0';
-        iosStatusBar.style.zIndex = '100';
         document.body.appendChild(iosStatusBar);
         document.body.classList.remove('platform-browser');
         document.body.classList.add('platform-cordova');
