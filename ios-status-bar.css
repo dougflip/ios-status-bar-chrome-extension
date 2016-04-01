@@ -6,3 +6,31 @@
     top: 0;
     z-index: 100;
 }
+
+.ios-status-bar-popup-body {
+    min-width: 200px;
+    padding: 10px;
+    background-color: #ffffff;
+    font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+    font-size: 100%;
+}
+
+.ios-status-bar-popup-body .ios-status-bar-popup-title {
+    line-height: 1.3rem;
+    margin: 5px 0 15px;
+}
+
+.ios-status-bar-popup-body .ios-status-bar-popup-title .ios-status-bar-popup-title-icon {
+    height: 22px;
+    border-radius: 4px;
+}
+
+.ios-status-bar-popup-body .ios-status-bar-popup-button {
+    display: block;
+    border: 1px solid #555;
+    border-radius: 4px;
+    padding: 6px;
+    margin-bottom: 10px;
+}
+
+
